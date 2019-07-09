@@ -1,0 +1,1 @@
+dir "C:\Program Files (x86)\Adobe\Acrobat Reader 2017\Reader\AcroRd32.exe" | Get-FileHash -Algorithm MD5 | Export-csv -Path C:\UFT\HashList.csv

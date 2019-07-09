@@ -1,0 +1,28 @@
+
+GetHash --> Hash
+	Run Powershell command
+	Open XMLfile en lees hash
+
+Query --> Program, Version
+ALS Record bestaat DAN
+	Controleer Hash
+	ALS Hash = Gelijk DAN
+		Log: PASS
+	ANDERS
+		Query --> Program, Gevonden Hash
+		ALS Hash Bestaat DAN
+			Log: FAIL
+		ANDERS (Hash bestaat niet)
+			InsertinDatabase: Nieuwe regel met Program, Version=Unknown, hash
+			Log: FAIL
+		EINDE ALS
+	EINDE ALS
+ANDERS (Record bestaat niet, dus combinatie van Program en Version levert geen resultaat)
+	Query --> Program, Gevonden Hash
+	ALS Hash Bestaat DAN
+		Log: FAIL 
+	ANDERS (Hash bestaat niet)
+		InsertinDatabase: Nieuwe regel met Program, Version=Unknown, hash
+		Log: FAIL
+	EINDE ALS
+EINDE ALS

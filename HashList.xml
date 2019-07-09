@@ -1,0 +1,3 @@
+#TYPE Microsoft.Powershell.Utility.FileHash
+"Algorithm","Hash","Path"
+"MD5","1A99E71308B5ED77BA52FF624058D583","C:\Program Files (x86)\Adobe\Acrobat Reader 2017\Reader\AcroRd32.exe"

@@ -1,0 +1,1 @@
+powershell -executionpolicy unrestricted .\Set-RaboRootCaCerts.ps1 -FixGit
