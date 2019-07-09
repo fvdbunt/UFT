@@ -1,8 +1,0 @@
-﻿<Properties>
-  <WatchEntry0 value="ParameterList(&quot;expectedtest&quot;)" />
-  <WatchEntry1 value="Properties(2)" />
-  <WatchEntry2 value="x" />
-  <WatchEntry3 value="ubound(WindowClass)" />
-  <WatchEntry4 value="y" />
-  <WatchEntry5 value="ubound(Properties)" />
-</Properties>
